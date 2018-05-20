@@ -6,7 +6,6 @@ import BookmarkForm from './BookmarkForm';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-
 describe('BookmarkForm', () => {
   it('should render form with input type text and submit button', () => {
     const bookmarkForm = shallow(

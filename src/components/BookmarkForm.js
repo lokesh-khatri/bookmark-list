@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { StyleSheet, css } from 'aphrodite';
+import { isValidUrl } from "../utils/isValidUrl";
 
 const styles = StyleSheet.create({
   button: {
@@ -30,39 +30,68 @@ const styles = StyleSheet.create({
     marginRight:10,
     marginLeft: 10,
     position: 'relative'
+  },
+  span: {
+    color: 'red',
+    fontSize: 12,
+    marginLeft: 5
   }
 
 });
 
-const BookmarkForm = ({ onSubmit, buttonText, inputText, placeholderText } ) => {
-  let input;
+class BookmarkForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: this.props.inputText};
 
-  const handleOnSubmit = e => {
-    e.preventDefault();
-    if (!input.value.trim()) {
-      return
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({value: this.props.inputText});
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  isInputValid() {
+    return this.state.value.trim() && isValidUrl(this.state.value);
+
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    if(this.isInputValid()) {
+      this.setState({value: ''});
+      this.props.onSubmit(this.state.value);
     }
-    onSubmit(input.value);
-    input.value = ''
-  };
+  }
 
-  return (
-    <div className={css(styles.form)}>
-      <form onSubmit={handleOnSubmit}>
-        <input
-          defaultValue={inputText}
-          placeholder={placeholderText}
-          ref={node => input = node}
-          className={css(styles.textField)}
-        />
-        <button className={css(styles.button)} type="submit">
-          {buttonText}
-        </button>
-      </form>
-    </div>
-  );
-};
+  render() {
+    const spanValue = !this.isInputValid()
+      ? 'Invalid url!'
+      : '';
 
+    return (
+      <div className={css(styles.form)}>
+        <form onSubmit={this.handleSubmit}>
+            <input
+              defaultValue={this.state.value}
+              placeholder={this.props.placeholderText}
+              className={css(styles.textField)}
+              onChange={this.handleChange}
+            />
+          <button className={css(styles.button)} type="submit">
+            {this.props.buttonText}
+          </button>
+        </form>
+        <span className={css(styles.span)}>{spanValue}</span>
+      </div>
+    );
+  }
+}
 
 BookmarkForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,

@@ -4,13 +4,19 @@ import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
   textField: {
-    width: '80%'
-  }
+    width: '80%',
+    cursor: 'pointer'
+  },
+  hover: {
+    ':hover': {
+      color: '#345ff2'
+    }
+  },
 });
 
 
 const TextField = ({ onClick, url }) => (
-  <div className={css(styles.textField)} onClick={onClick}>
+  <div className={css(styles.textField, styles.hover)} onClick={onClick}>
     {url}
   </div>
 );

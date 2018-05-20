@@ -17,11 +17,11 @@ const BookmarkForm = ({ onSubmit, buttonText, inputText, placeholderText } ) => 
     <div>
       <form onSubmit={handleOnSubmit}>
         <input
-          value={inputText}
+          defaultValue={inputText}
           placeholder={placeholderText}
           ref={node => input = node} />
         <button type="submit">
-          buttonText
+          {buttonText}
         </button>
       </form>
     </div>

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1adfce-8ea0-4761-8da9-2076b9a09de3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/reducers/bookmarks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/bookmarks.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TextField.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TextField.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +19,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bookmarks.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="bookmarks.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/bookmarks.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+                  <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TextField.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/TextField.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -30,13 +44,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="bookmarks.test.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="bookmarks.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/bookmarks.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="960">
-                  <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+                  <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TextField.test.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/TextField.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -76,6 +102,9 @@
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/reducers/bookmarks.test.js" />
         <option value="$PROJECT_DIR$/src/reducers/bookmarks.js" />
+        <option value="$PROJECT_DIR$/src/TextField.js" />
+        <option value="$PROJECT_DIR$/src/components/TextField.js" />
+        <option value="$PROJECT_DIR$/src/components/TextField.test.js" />
       </list>
     </option>
   </component>
@@ -131,6 +160,12 @@
               <item name="bookmark-list" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmark-list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmark-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmark-list" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -158,7 +193,11 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/actions" />
     </key>
@@ -175,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.bookmarks reducer">
+  <component name="RunManager" selected="Jest.TextField">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -197,6 +236,17 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="TextField" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/TextField.test.js" />
+      <test-names>
+        <test-name value="TextField" />
+      </test-names>
     </configuration>
     <configuration name="actions" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -260,9 +310,11 @@
     <list>
       <item itemvalue="Jest.actions" />
       <item itemvalue="Jest.bookmarks reducer" />
+      <item itemvalue="Jest.TextField" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.TextField" />
         <item itemvalue="Jest.bookmarks reducer" />
         <item itemvalue="Jest.actions" />
       </list>
@@ -279,7 +331,7 @@
       <option name="presentableId" value="Default" />
       <updated>1526828659397</updated>
       <workItem from="1526828661309" duration="85000" />
-      <workItem from="1526828755630" duration="1691000" />
+      <workItem from="1526828755630" duration="2130000" />
     </task>
     <servers />
   </component>
@@ -308,9 +360,12 @@
     <history-entry file="bookmarks_reducer - 2018.05.20 at 16h 34m 11s.xml">
       <configuration name="bookmarks reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="TextField - 2018.05.20 at 16h 42m 50s.xml">
+      <configuration name="TextField" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1776000" />
+    <option name="totallyTimeSpent" value="2215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1152" extended-state="0" />
@@ -425,16 +480,36 @@
     <entry file="file://$PROJECT_DIR$/src/reducers/bookmarks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/bookmarks.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

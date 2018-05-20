@@ -42,7 +42,10 @@ const styles = StyleSheet.create({
 class BookmarkForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: this.props.inputText};
+    this.state = {
+      value: this.props.inputText,
+      editing: false
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -53,7 +56,10 @@ class BookmarkForm extends Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({
+      value: event.target.value,
+      editing: true
+    });
   }
 
   isInputValid() {
@@ -64,13 +70,16 @@ class BookmarkForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     if(this.isInputValid()) {
-      this.setState({value: ''});
+      this.setState({
+        value: '',
+        editing: false
+      });
       this.props.onSubmit(this.state.value);
     }
   }
 
   render() {
-    const spanValue = !this.isInputValid()
+    const spanValue = !this.isInputValid() && this.state.editing
       ? 'Invalid url!'
       : '';
 
@@ -78,7 +87,7 @@ class BookmarkForm extends Component {
       <div className={css(styles.form)}>
         <form onSubmit={this.handleSubmit}>
             <input
-              defaultValue={this.state.value}
+              value={this.state.value}
               placeholder={this.props.placeholderText}
               className={css(styles.textField)}
               onChange={this.handleChange}

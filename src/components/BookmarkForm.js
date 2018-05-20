@@ -53,6 +53,7 @@ class BookmarkForm extends Component {
 
   componentDidMount() {
     this.setState({value: this.props.inputText});
+    this.input.focus();
   }
 
   handleChange(event) {
@@ -64,7 +65,6 @@ class BookmarkForm extends Component {
 
   isInputValid() {
     return this.state.value.trim() && isValidUrl(this.state.value);
-
   }
 
   handleSubmit(event) {
@@ -91,6 +91,7 @@ class BookmarkForm extends Component {
               placeholder={this.props.placeholderText}
               className={css(styles.textField)}
               onChange={this.handleChange}
+              ref={input => this.input = input}
             />
           <button className={css(styles.button)} type="submit">
             {this.props.buttonText}

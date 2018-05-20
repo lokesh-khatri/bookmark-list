@@ -1,9 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-import Bookmark from './Bookmark'
+import PropTypes from 'prop-types';
+import { StyleSheet, css } from 'aphrodite';
+import Bookmark from './Bookmark';
+
+
+const styles = StyleSheet.create({
+  list: {
+    listStyleType: 'none',
+    paddingLeft: 0
+  },
+});
 
 const BookmarkList = ({bookmarks, onEdit, onUpdate, onRemove }) => (
-  <ul>
+  <ul className={css(styles.list)}>
     {
       bookmarks.map((bookmark, index) => (
         <Bookmark

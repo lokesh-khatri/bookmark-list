@@ -1,8 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import { StyleSheet, css } from 'aphrodite';
+
+const styles = StyleSheet.create({
+  textField: {
+    width: '80%'
+  }
+});
+
 
 const TextField = ({ onClick, url }) => (
-  <div onClick={onClick}>
+  <div className={css(styles.textField)} onClick={onClick}>
     {url}
   </div>
 );

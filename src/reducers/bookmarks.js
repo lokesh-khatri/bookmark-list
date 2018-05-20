@@ -7,21 +7,21 @@ export const bookmarks = (state = initialState, action) => {
     case ADD_BOOKMARK:
       return state.concat({
         url: action.url,
-        onEdit: false
+        editing: false
       });
 
 
     case UPDATE_BOOKMARK:
       return state.map((bookmark, index) => {
         return index === action.index
-          ? {url: action.url, onEdit: !bookmark.onEdit}
+          ? {url: action.url, editing: !bookmark.editing}
           : bookmark;
       });
 
     case EDITING_BOOKMARK:
       return state.map((bookmark, index) => {
         return index === action.index
-          ? {url: bookmark.url, onEdit: !bookmark.onEdit}
+          ? {url: bookmark.url, editing: !bookmark.editing}
           : bookmark;
       });
 

@@ -12,7 +12,7 @@ describe('bookmarks reducer', () => {
       [
         {
           url,
-          onEdit: false
+          editing: false
         }
       ]
     );
@@ -23,7 +23,7 @@ describe('bookmarks reducer', () => {
     const currentState = [
       {
         url,
-        onEdit: true
+        editing: true
       }
     ];
     const newUrl = 'https://helloworld.com';
@@ -33,7 +33,7 @@ describe('bookmarks reducer', () => {
       [
         {
           url: newUrl,
-          onEdit: false
+          editing: false
         }
       ]
     );
@@ -44,7 +44,7 @@ describe('bookmarks reducer', () => {
     const currentState = [
       {
         url,
-        onEdit: false
+        editing: false
       }
     ];
     const index = 0;
@@ -53,7 +53,7 @@ describe('bookmarks reducer', () => {
       [
         {
           url,
-          onEdit: true
+          editing: true
         }
       ]
     );
@@ -63,11 +63,11 @@ describe('bookmarks reducer', () => {
     const currentState = [
       {
         url: 'https://wired.com',
-        onEdit: false
+        editing: false
       },
       {
         url: 'https://helloworld.com',
-        onEdit: false
+        editing: false
       }
     ];
     const index = 1;
@@ -76,7 +76,7 @@ describe('bookmarks reducer', () => {
       [
         {
           url: 'https://wired.com',
-          onEdit: false
+          editing: false
         }
       ]
     );

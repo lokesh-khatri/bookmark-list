@@ -21,8 +21,8 @@ export const bookmarks = (state = initialState, action) => {
     case EDITING_BOOKMARK:
       return state.map((bookmark, index) => {
         return index === action.index
-          ? {url: bookmark.url, editing: !bookmark.editing}
-          : bookmark;
+          ? {url: bookmark.url, editing: true}
+          : {url: bookmark.url, editing: false};
       });
 
     case DELETE_BOOKMARK:

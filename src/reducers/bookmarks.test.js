@@ -39,6 +39,35 @@ describe('bookmarks reducer', () => {
     );
   });
 
+  it('should handle editing only 1 bookmark at a time', () => {
+    const currentState = [
+      {
+        url: 'www.wired.com',
+        editing: false
+      },
+      {
+        url: 'www.vox.com',
+        editing: true
+
+      }
+    ];
+    const index = 0;
+
+    expect(bookmarks(currentState, editingBookmark(index))).toEqual(
+      [
+        {
+          url: 'www.wired.com',
+          editing: true
+        },
+        {
+          url: 'www.vox.com',
+          editing: false
+
+        }
+      ]
+    );
+  });
+  
   it('should handle editing existing bookmark', () => {
     const url = 'https://wired.com';
     const currentState = [

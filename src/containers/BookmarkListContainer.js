@@ -3,7 +3,7 @@ import BookmarkList from '../components/BookmarkList';
 import { editingBookmark, deleteBookmark, updateBookmark} from "../actions";
 
 const mapStateToProps = state => ({
-  bookmarks: state.bookmarks
+  bookmarks: state
 });
 
 const mapDispatchToProps = dispatch => ({

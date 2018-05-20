@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1adfce-8ea0-4761-8da9-2076b9a09de3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BookmarkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookmarkList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BookmarkList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookmarkList.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/BookmarkListContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,7 +136,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BookmarkList.test.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BookmarkList.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/BookmarkList.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="585">
@@ -155,6 +153,18 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
                   <caret line="1" column="28" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BookmarkListContainer.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/containers/BookmarkListContainer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -212,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/reducers/bookmarks.js" />
         <option value="$PROJECT_DIR$/src/components/BookmarkList.js" />
         <option value="$PROJECT_DIR$/src/components/BookmarkList.test.js" />
+        <option value="$PROJECT_DIR$/src/containers/BookmarkListContainer.js" />
       </list>
     </option>
   </component>
@@ -467,7 +478,7 @@
       <option name="presentableId" value="Default" />
       <updated>1526828659397</updated>
       <workItem from="1526828661309" duration="85000" />
-      <workItem from="1526828755630" duration="5924000" />
+      <workItem from="1526828755630" duration="6230000" />
     </task>
     <servers />
   </component>
@@ -504,7 +515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6009000" />
+    <option name="totallyTimeSpent" value="6315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1152" extended-state="0" />
@@ -517,12 +528,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32985783" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32985783" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -718,6 +729,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BookmarkList.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BookmarkList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -728,12 +749,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BookmarkList.test.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/BookmarkListContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

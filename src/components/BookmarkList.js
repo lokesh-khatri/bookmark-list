@@ -9,7 +9,7 @@ const BookmarkList = ({bookmarks, onEdit, onUpdate, onRemove }) => (
         <Bookmark
           key={index}
           onEdit={() => onEdit(index)}
-          onUpdate={bookmarkText => onUpdate(bookmarkText, index)}
+          onUpdate={url => onUpdate(url, index)}
           onRemove={() => onRemove(index)}
           editing={bookmark.editing}
           url={bookmark.url}

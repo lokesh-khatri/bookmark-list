@@ -1,6 +1,6 @@
 import 'jsdom-global/register';
 import React from 'react';
-import Enzyme, { shallow }from 'enzyme';
+import Enzyme, { mount }from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import BookmarkForm from './BookmarkForm';
 
@@ -8,7 +8,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('BookmarkForm', () => {
   it('should render form with input type text and submit button', () => {
-    const bookmarkForm = shallow(
+    const bookmarkForm = mount(
       <BookmarkForm
         onSubmit={() => {}}
         buttonText={''}
